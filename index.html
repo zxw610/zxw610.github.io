@@ -954,6 +954,168 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <style>
+    footer {
+      background-color: #f8f9fa;
+      padding: 60px 20px 30px;
+      font-family: "Segoe UI", sans-serif;
+      color: #444;
+      border-top: 1px solid #ddd;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+  
+    .footer-section {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+  
+    .footer-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+      border-left: 4px solid #007bff;
+      padding-left: 10px;
+    }
+  
+    .footer-section p {
+      line-height: 1.6;
+      font-size: 15px;
+      color: #555;
+    }
+  
+    .footer-links a {
+      display: block;
+      color: #555;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 15px;
+      position: relative;
+      padding-left: 12px;
+      transition: all 0.3s;
+    }
+  
+    .footer-links a::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      color: #007bff;
+      font-weight: bold;
+      transition: left 0.3s;
+    }
+  
+    .footer-links a:hover {
+      color: #007bff;
+      padding-left: 16px;
+    }
+  
+    .map-container {
+      width: 100%;
+      height: 220px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+  
+    .map-container:hover {
+      transform: scale(1.02);
+    }
+  
+    #clustrmaps {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+    }
+  
+    .footer-bottom a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  
+    .footer-bottom a:hover {
+      text-decoration: underline;
+    }
+  
+    /* Optional: smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    /* Responsive on smaller screens */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .footer-section {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+  
+  <footer>
+    <div class="footer-container">
+  
+      <!-- About Section -->
+      <div class="footer-section">
+        <div class="footer-title">Hello There</div>
+        <p>
+          Hello and welcome! I'm Xuewei — a curious mind with a deep passion for robotics, AI, and problem solving. This site shares my journey through research, creation, and discovery.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#honors">Honors</a>
+          <a href="#services">Services</a>
+        </div>
+      </div>
+  
+      <!-- Visitor Map -->
+      <div class="footer-section">
+        <div class="footer-title">🌍 Visitor Map</div>
+        <div class="map-container">
+          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=puqL3MVzzmyh__jfbJMYWB45JqwNMcUd0OX2tG5AHaw&cl=ffffff&w=a"></script>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      © 2025 <a href="https://zxw610.github.io" target="_blank">zxw610.github.io</a> ✨ | Thanks for visiting! ❤️ 
+    </div>    
+  </footer>
+  
+  
+  
+  
+
 </body>
 
 </html>
